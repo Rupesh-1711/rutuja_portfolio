@@ -11,10 +11,10 @@ const Navbar = ({
   logoText = "Rovex",
   menuItems = [
     { label: "Home", href: "#" },
-    { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Portfolio", href: "#portfolio" },
-    { label: "Pages", href: "#pages" },
+    { label: "Toolbox", href: "#toolbox" },
+    { label: "Methodology", href: "#methodology" },
     { label: "Contact Us", href: "#contact", hasIcon: true },
   ],
 }: NavbarProps) => {

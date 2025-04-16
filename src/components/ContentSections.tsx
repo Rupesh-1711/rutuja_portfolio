@@ -27,7 +27,10 @@ const ContentSections = () => {
   return (
     <div className="w-full bg-rovex-black text-white">
       {/* Trusted By Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-rovex-gray">
+      <section
+        id="trusted"
+        className="py-16 px-4 md:px-8 lg:px-16 bg-rovex-gray"
+      >
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -69,7 +72,10 @@ const ContentSections = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-black">
+      <section
+        id="services"
+        className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-black"
+      >
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
             <motion.div
@@ -89,9 +95,11 @@ const ContentSections = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Button className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white rounded-md font-medium transition-colors mt-4 md:mt-0">
-                View All Services
-              </Button>
+              <a href="#services">
+                <Button className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white rounded-md font-medium transition-colors mt-4 md:mt-0">
+                  View All Services
+                </Button>
+              </a>
             </motion.div>
           </div>
 
@@ -159,9 +167,11 @@ const ContentSections = () => {
                   We create intuitive and engaging user interfaces that enhance
                   user experience and drive conversions.
                 </p>
-                <Button className="bg-rovex-black hover:bg-rovex-lightgray text-white rounded-md font-medium transition-colors">
-                  Read More
-                </Button>
+                <a href="#services">
+                  <Button className="bg-rovex-black hover:bg-rovex-lightgray text-white rounded-md font-medium transition-colors">
+                    Read More
+                  </Button>
+                </a>
               </div>
               <div className="relative h-64 mt-4">
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -177,7 +187,10 @@ const ContentSections = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-gray">
+      <section
+        id="portfolio"
+        className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-gray"
+      >
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
             <motion.div
@@ -197,9 +210,11 @@ const ContentSections = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Button className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white rounded-md font-medium transition-colors mt-4 md:mt-0">
-                View All Portfolio
-              </Button>
+              <a href="#portfolio">
+                <Button className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white rounded-md font-medium transition-colors mt-4 md:mt-0">
+                  View All Portfolio
+                </Button>
+              </a>
             </motion.div>
           </div>
 
@@ -256,7 +271,10 @@ const ContentSections = () => {
       </section>
 
       {/* Toolbox Section */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-black">
+      <section
+        id="toolbox"
+        className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-black"
+      >
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
             <motion.div
@@ -276,9 +294,11 @@ const ContentSections = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Button className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white rounded-md font-medium transition-colors mt-4 md:mt-0">
-                Let's Get Started!
-              </Button>
+              <a href="#contact">
+                <Button className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white rounded-md font-medium transition-colors mt-4 md:mt-0">
+                  Let's Get Started!
+                </Button>
+              </a>
             </motion.div>
           </div>
 
@@ -342,7 +362,10 @@ const ContentSections = () => {
       </section>
 
       {/* Methodology Section */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-gray">
+      <section
+        id="methodology"
+        className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-gray"
+      >
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -445,9 +468,23 @@ const ContentSections = () => {
         </div>
       </section>
 
-      {/* Placeholder for other sections that will be implemented later */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-black text-center">
-        <p className="text-gray-400">More sections coming soon...</p>
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="py-20 px-4 md:px-8 lg:px-16 bg-rovex-black text-center"
+      >
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-rovex-yellow mb-6">
+            Get in touch with us
+          </h2>
+          <p className="text-gray-300 mb-8">
+            Ready to elevate your brand? Let's discuss how our design expertise
+            can help you achieve your goals.
+          </p>
+          <Button className="bg-rovex-yellow hover:bg-yellow-500 text-rovex-black px-8 py-6 h-auto rounded-md text-lg font-medium transition-colors">
+            Contact Us Now
+          </Button>
+        </div>
       </section>
     </div>
   );

@@ -50,19 +50,23 @@ const HeroSection = ({
               {subheading}
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button
-                onClick={onPrimaryCtaClick}
-                className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white px-6 py-6 h-auto rounded-md text-lg font-medium transition-colors"
-              >
-                {primaryCtaText}
-              </Button>
-              <Button
-                onClick={onSecondaryCtaClick}
-                variant="secondary"
-                className="bg-rovex-gray hover:bg-rovex-lightgray text-white px-6 py-6 h-auto rounded-md text-lg font-medium"
-              >
-                {secondaryCtaText}
-              </Button>
+              <a href="#portfolio">
+                <Button
+                  onClick={onPrimaryCtaClick}
+                  className="border-2 border-rovex-yellow bg-transparent hover:bg-rovex-yellow hover:text-rovex-black text-white px-6 py-6 h-auto rounded-md text-lg font-medium transition-colors"
+                >
+                  {primaryCtaText}
+                </Button>
+              </a>
+              <a href="#services">
+                <Button
+                  onClick={onSecondaryCtaClick}
+                  variant="secondary"
+                  className="bg-rovex-gray hover:bg-rovex-lightgray text-white px-6 py-6 h-auto rounded-md text-lg font-medium"
+                >
+                  {secondaryCtaText}
+                </Button>
+              </a>
             </div>
           </motion.div>
 
